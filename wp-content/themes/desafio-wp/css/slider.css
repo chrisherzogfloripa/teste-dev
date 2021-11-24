@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  /* SLIDER */
+  .slider2 {
+    width:100%;
+    max-width: 960px;
+    height: 598px;
+    position: absolute;
+    right:0;
+  
+    /* IN THE END */
+    overflow: hidden;
+  }
+  
+  .slide2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 600px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* THIS creates the animation! */
+    transition: transform 1s;
+  }
+  
+  .slide2 > img {
+    /* Only for images that have different size than slide */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slide--1 {
+		z-index:9;
+	}
+	.slide--2, .slide--3 {
+		z-index:8;
+	}
+  
+  .slider__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+  
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: inherit;
+    color: #333;
+    border-radius: 50%;
+    height: 5.5rem;
+    width: 5.5rem;
+    font-size: 3.25rem;
+    cursor: pointer;
+  }
+  
+  .slider__btn--left {
+      display: none;
+    left: 6%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .slider__btn--right {
+      display: none;
+    right: 6%;
+    transform: translate(50%, -50%);
+  }
+  
+  .dots2 {
+    position: absolute;
+    z-index:10;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .dots2__dot {
+    border: none;
+    background-color: #b9b9b9;
+    opacity: 0.7;
+    height: 4px;
+    width: 40px;
+    margin-right: 1.75rem;
+    cursor: pointer;
+    transition: all 0.5s;
+	  padding:0 !important;
+  
+    /* Only necessary when overlying images */
+    /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+  }
+  
+  .dots2__dot:last-child {
+    margin: 0;
+  }
+  
+  .dots2__dot--active {
+    /* background-color: #fff; */
+    background-color: #FF5722;
+    opacity: 1;
+  }

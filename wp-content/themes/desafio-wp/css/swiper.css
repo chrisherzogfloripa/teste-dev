@@ -1,0 +1,211 @@
+.swiper {
+    width: 100%;
+    max-width: 1110px;
+    height: 535px;
+    margin: auto;
+  }
+  .swiper2 {
+    width: 100%;
+    max-width: 1110px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .swiper3 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .swiper-slide h4 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222831;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 466px;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+  .swiper-slide-next {
+      height: 466px !important;
+      transition: all .2s ease-in-out;
+      box-shadow: 0 20px 30px rgb(0 0 0 / 10%);
+  }
+  .swiper-slide-next h4 {
+    margin-top:12px;
+  }
+ 
+.swiper-pagination-bullet {
+    border-radius: 0;
+    width: 40px;
+    height: 4px;
+    background-color: #bbb;
+}
+.swiper-pagination-bullet-active {
+    background-color: #DD2C00;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin:0;
+}
+
+.swiper-pagination3 {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+}
+.imagem {
+position: absolute;
+left: 0;
+top: 0;
+max-height: 415px;
+}
+.swiper-slide-next .imagem {
+max-height: 466px !important;
+}
+
+.swiper2 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 52px;
+}
+.swiper2 .swiper-slide-next {
+  height: 52px !important;
+  transition: all .2s ease-in-out;
+  box-shadow: none;
+}
+
+.swiper3 .swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  background: #10375c;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: flex-start;
+  height: auto;
+  min-height: 391px;
+  max-width: 443px;
+}
+.swiper3 .swiper-slide-next {
+  height: auto !important;
+  transition: all .2s ease-in-out;
+  box-shadow: none;
+}
+.swiper3 .swiper-slide img {
+  width:56px;
+  height: 57px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  top:45%;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  opacity: 0;
+}
+.swiper-button-next, .swiper-button-prev {
+  font-size: 300%;
+}
+.swiper-button-next {
+  color:#ff5722;
+  right:70px;
+  transform: scaleX(2);
+}
+.swiper-button-prev {
+  color:#9a9a9a;
+  left: auto;
+  right:170px;
+}
+@media (max-width: 640px) {
+  .swiper2 {
+    margin-top: 50px;
+  }
+  .swiper-slide-active {
+      height: 466px !important;
+      transition: all .2s ease-in-out;
+  }
+  .swiper2 .swiper-slide-active, .swiper3 .swiper-slide-active  {
+    height: auto !important;
+  }
+  .swiper2 .swiper-slide-next {
+    height: auto !important;
+  }
+  .swiper-slide {
+    background: transparent;
+  }
+  .swiper-slide-active .imagem {
+    max-height: 466px;
+  }
+  .swiper-slide img {
+    object-fit: contain;
+  }
+  .swiper-slide-next {
+    box-shadow: none;
+  }
+  .swiper2 .swiper-slide img {
+    height: 52px;
+    object-fit:scale-down;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    top: 65%;
+  }
+  .swiper-button-next {
+    right: 30%;
+  }
+  .swiper-button-prev {
+    left: 40%;
+  }
+}
